@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>factura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contenido" padding>
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-subtitle>Supermercado MEGAJAEN</ion-card-subtitle>
+        <ion-card-title>Datos de Entrega</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content >
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2" align-self-start>
+              NÂ° Factura:
+              
+            </ion-col>
+            <ion-col>
+              s0001
+            </ion-col>
+            <ion-col size="2" align-self-start>
+                Fecha:
+              </ion-col>
+              <ion-col>
+                01-Agosto-2019
+              </ion-col>
+          </ion-row>
+  
+          <ion-row>
+            <ion-col size="2" align-self-start>
+                Cliente:
+              </ion-col>
+              <ion-col>
+                Andres Eduaro Usina Zhingri
+              </ion-col>
+              <ion-col size="2" align-self-start>
+                  Cedula
+                </ion-col>
+                <ion-col>
+                  0987654567
+                </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="2" align-self-start>
+                  Direccion:
+                </ion-col>
+                <ion-col>
+                    <ion-input placeholder="Direccion"></ion-input>
+                </ion-col>
+                <ion-col size="2" align-self-start>
+                    Telefono:
+                  </ion-col>
+                  <ion-col>
+                      <ion-input placeholder="Num Telefono"></ion-input>
+                  </ion-col>
+            </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  
+  
+    <ion-card class="card"> 
+      <ion-card-content>
+        <ion-grid>
+          <ion-row class="rowLabel">
+            <ion-col size="1">
+              Accion
+            </ion-col>
+            <ion-col>
+              Producto
+              <h1>{{nombre}}</h1>
+            </ion-col>
+            <ion-col size="2">
+              Precio
+              <h1>{{codBarra}}</h1>
+            </ion-col>
+            <ion-col size="2">
+              Cantidad
+            </ion-col>
+            <ion-col size="2">
+              Monto
+            </ion-col>
+          </ion-row>
+  
+          <ion-row>
+            <ion-button>
+              <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+            </ion-button>
+          </ion-row>
+  
+          <ion-row>
+            <ion-col size="2">SubTotal</ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="2">Descuento</ion-col>
+            <ion-col>%</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="2">IVA</ion-col>
+            <ion-col>12 %</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="2">Total</ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+  
+        </ion-grid>
+        
+      <ion-buttons slot="secondary">
+         <ion-back-button defaultHref="/producto"> </ion-back-button>
+        </ion-buttons>
+      </ion-card-content>
+    </ion-card>
+  
+    
+    <h3>Forma de Pago</h3>
+    <div>
+      <ion-input placeholder="Nombre del Titular"></ion-input>
+      <ion-input placeholder="NÂ° Tarjeta"></ion-input>
+      <ion-button>
+        <ion-icon slot="left" name="left"></ion-icon>
+        Pagar
+      </ion-button>
+    </div>
+  </ion-content>

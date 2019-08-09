@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Inicio de Sesion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding style="text-align: center">
+    <h2>MEGAJAEN</h2>
+    
+    <ion-list>
+  
+      <ion-item style="text-align: center">
+        <ion-label fixed>Email: </ion-label><br>
+        <ion-input [(ngModel)]="email" type="text" value=""></ion-input>
+      </ion-item>
+  
+      <ion-item>
+      <ion-label fixed>Clave: </ion-label><br>
+      <ion-input [(ngModel)]="clave"  type="password"></ion-input>
+    </ion-item><br>
+  
+    <button type="submit" (click)="login()"  style="width:5%, height=20%; font-size: 25px; background: darkkhaki" >Ingresar</button><br>
+  
+    <p class="bottom"> ¿No tienes Cuenta? </p>
+    <button mat-button color="primary" style="width:5%, height=20%; font-size: 20px; background: darkkhaki">Registrate</button>
+  
+    </ion-list>
+  
+  </ion-content>

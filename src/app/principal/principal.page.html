@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-searchbar  placeholder="Buscar por categoria"></ion-searchbar>
+
+    </ion-list-header>
+
+  </ion-list>
+  <ion-card class="card">
+    <ion-grid>
+      <ion-row>
+        <ion-col  size="3" *ngFor="let pro of datos | async" col-2 width-50 center>
+          <ion-card class="imgdet">
+            <ion-card-content text-center>
+
+              <img width="150" height="150" src="data:image/JPEG;base64,{{pro.imagen}}" class="imagen">
+             
+              <ion-label class="txt">{{pro.nombre}}</ion-label><br><br>
+              <ion-label class="txt">{{pro.precioVenta}}</ion-label><br><br>
+              <ion-button (click)="enviarProducto(pro.codigo)"> Comprar</ion-button>
+            
+              <ion-button  (click)="verProducto(pro.codigo)">
+                Ver
+              </ion-button>
+           
+           <!--  (click)="verProducto(pro.codigo)" -->
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+
+</ion-content>

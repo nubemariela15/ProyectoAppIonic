@@ -1,0 +1,41 @@
+/* Set the color on all ion-button elements */
+ion-button {
+    --background: coral;
+    color: darkmagenta;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .imagen {
+      border-color: darkmagenta;
+      border-style: solid;
+      border-width: 2px 2px 2px 2px;
+      border-radius:32px;
+  }
+  
+  .txt{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+
+  }
+
+  .card{
+    background: #F3E2A9; 
+  }
+
+  .imgdet{
+      border-style: solid;
+      border-width: 2px;
+      border-color: #F79F81;
+  }
+  ion-content{
+      --background: #F79F81;
+
+  }
+
+
+  
